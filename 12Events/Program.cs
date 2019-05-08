@@ -17,6 +17,7 @@ namespace LearningCsharp
             Form form = new Form();
             form.Controls.Add(button);
             Application.Run(form);
+            button.PerformClick();
             #endregion
 
             #region Console events

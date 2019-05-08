@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace LearningCsharp
 {
     public delegate void CropHandler();
+
     class Program
     {
         static void Main(string[] args)
@@ -18,9 +19,9 @@ namespace LearningCsharp
             im1.Width = 100;
             Console.WriteLine(im1.GetPixels());
 
-            im1.CropEvent += new CropHandler(im1.Crop);
+            im1.CropEvent += new CropHandler(im1.PerformCrop);
             //im1.CropEvent -= new CropHandler(im1.Crop);
-            im1.Crop();
+            im1.PerformCrop();
 
             Console.WriteLine(im1.GetPixels());
 
@@ -38,7 +39,7 @@ namespace LearningCsharp
             return Height * Width;
         }
 
-        public void Crop()
+        public void PerformCrop()
         {
             if (CropEvent != null)
             {
