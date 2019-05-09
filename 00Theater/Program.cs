@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 
 namespace LearningCsharp
 {
-    
-
     class Program
     {
         static void Main(string[] args)
@@ -21,5 +19,4 @@ namespace LearningCsharp
     }
 
     
-    }
 }

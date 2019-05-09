@@ -32,6 +32,18 @@ namespace LearningCsharp
         public int Height { get; set; }
         public int Width { get; set; }
 
+        public GhImage()
+        {
+            Height = 100;
+            Width = 140;
+        }
+
+        public GhImage(int height, int width)
+        {
+            Height = height;
+            Width = width;
+        }
+
         public int GetPixels()
         {
             return Height * Width;

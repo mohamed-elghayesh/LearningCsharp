@@ -10,6 +10,7 @@ namespace LearningCsharp
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
