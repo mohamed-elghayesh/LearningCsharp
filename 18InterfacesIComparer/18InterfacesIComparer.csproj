@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F489B043-6F29-4280-B765-BA0D8FEF6EF0}</ProjectGuid>
+    <ProjectGuid>{D04C9131-3F76-482F-9E1E-B09B60254AB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_18Interfaces</RootNamespace>
-    <AssemblyName>18Interfaces</AssemblyName>
+    <RootNamespace>_18InterfacesIComparer</RootNamespace>
+    <AssemblyName>18InterfacesIComparer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="ILoyaltyCardHolder.cs" />
-    <Compile Include="Partner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
