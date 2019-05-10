@@ -154,9 +154,9 @@ namespace LearningCsharp
             int[] nums = {1, 2, 3, 4};
             int[] squares = nums.Select(n => n * n).ToArray();
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int l = 0; l < nums.Length; l++)
             {
-                Console.WriteLine(nums[i] + " : " + squares[i]);
+                Console.WriteLine(nums[l] + " : " + squares[l]);
             }
 
             Array.ForEach(nums, n => Console.WriteLine(n + " || " + Math.Pow(n, 2)));
@@ -174,11 +174,34 @@ namespace LearningCsharp
 
             // string? myString = ""; // string is already nullable so ? has no meaning
 
-            Console.ReadLine();
+            #endregion
 
+            #region Overloading Operators
+            City city1 = new City();
+            city1.Area = 10;
+            city1.Population = 1000;
+            City city2 = new City();
+            city2.Area = 20;
+            city2.Population = 2000;
+            City city3 = city1 + city2;
+            Console.WriteLine(city3.Area + "|" + city3.Population);
             #endregion
 
             Console.ReadLine();
+        }
+    }
+    class City
+    {
+        public int Area { get; set; }
+        public int Population { get; set; }
+
+        public static City operator + (City A, City B)
+        {
+            City myCity = new City();
+            myCity.Area = A.Area + B.Area;
+            myCity.Population = A.Population + B.Population;
+
+            return myCity;
         }
     }
 }
