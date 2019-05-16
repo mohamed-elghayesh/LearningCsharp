@@ -12,12 +12,12 @@ namespace LearningCsharp
             button.Text = "Press Me";
             button.Click += Button_Click;
 
-            // Button_Click(button, null);
+            //Button_Click(button, null);
+            button.PerformClick();
 
             Form form = new Form();
             form.Controls.Add(button);
             Application.Run(form);
-            button.PerformClick();
             #endregion
 
             #region Console events

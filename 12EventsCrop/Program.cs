@@ -18,7 +18,7 @@ namespace LearningCsharp
             Console.WriteLine(im1.GetPixels());
 
             im1.CropEvent += new CropHandler(im1.PerformCrop);
-            //im1.CropEvent -= new CropHandler(im1.Crop);
+            //im1.CropEvent -= new CropHandler(im1.PerformCrop);
             im1.PerformCrop();
 
             Console.WriteLine(im1.GetPixels());
