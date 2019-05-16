@@ -1,2 +1,2 @@
 # LearningCsharp
-Helper code for c# classes
+Helper code for c# learning classes
