@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Campus
 {
-    class Program
+    class Employee : Member
     {
-        static void Main(string[] args)
-        {
-        }
+        public string Title { get; set; }
+        
     }
 }

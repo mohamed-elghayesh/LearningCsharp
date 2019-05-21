@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Campus
 {
-    class Program
+    class Student : Member
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
