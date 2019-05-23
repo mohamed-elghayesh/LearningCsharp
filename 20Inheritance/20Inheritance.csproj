@@ -43,18 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alumnus.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Faculty.cs" />
-    <Compile Include="Member.cs" />
+    <Compile Include="BaseSalaryCommisionEmployee.cs" />
+    <Compile Include="CommisionEmployee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Staff.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="SalaryCommissionEmployee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
