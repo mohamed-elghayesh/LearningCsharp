@@ -11,8 +11,8 @@ namespace Campus
         public string FirstName { get; }
         public string LastName { get; }
         public string SocialSecurityNumber { get; }
-        protected decimal grossSales; // gross weekly sales, internal for inheritance
-        protected decimal commissionRate; //commision percentage, internal for inheritance
+        private decimal grossSales; // gross weekly sales, internal for inheritance
+        private decimal commissionRate; //commision percentage, internal for inheritance
 
         // grossSales getter and setter property
         public decimal GrossSales
@@ -54,13 +54,13 @@ namespace Campus
         }
 
         // calculate commission employee's pay (Expression Bodied Method)
-        public virtual decimal Earnings() => commissionRate * grossSales;
+        public virtual decimal Earnings() => CommissionRate * GrossSales;
 
         // return a string representation of commision employee object (Expression Bodied Method)
         public override string ToString() => $"commission employee: {FirstName} {LastName} \n" +
                                              $"social security number: {SocialSecurityNumber} \n" +
                                              $"gross sales: {GrossSales:C} \n" +
-                                             $"commission rate: {commissionRate:F2}";
+                                             $"commission rate: {CommissionRate:F2}";
         
     }
 }

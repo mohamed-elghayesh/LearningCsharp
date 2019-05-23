@@ -30,13 +30,15 @@ namespace Campus
             }
         }
 
-        public override decimal Earnings() => baseSalary + (commissionRate * grossSales);
+        public override decimal Earnings() => BaseSalary + base.Earnings();
+
+        public override string ToString() => $"base info: {base.ToString()} \nSalary: {BaseSalary:C}";
 
         // return a string representation of commision employee object (Expression Bodied Method)
-        public override string ToString() => $"commission employee: {FirstName} {LastName} \n" +
-                                             $"social security number: {SocialSecurityNumber} \n" +
-                                             $"gross sales: {grossSales:C} \n" +
-                                             $"commission rate: {commissionRate:F2} \n" +
-                                             $"salary: {baseSalary:C}";
+        // public override string ToString() => $"commission employee: {FirstName} {LastName} \n" +
+        //                                     $"social security number: {SocialSecurityNumber} \n" +
+        //                                     $"gross sales: {grossSales:C} \n" +
+        //                                     $"commission rate: {commissionRate:F2} \n" +
+        //                                     $"salary: {baseSalary:C}";
     }
 }
