@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Campus.BaseSalaryCommissionEmployee">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAgAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>BaseSalaryCommisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Campus.CommissionEmployee">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAIAAAAKAAEACAAAAAAAAAAAACAAAAAAAIAAAg=</HashCode>
+      <FileName>CommisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Campus.CommissionEmployeeTest">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Campus.SalaryCommissionEmployee">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAIAAAgKAAEACAAAAAAAAAAAACAAAAAAAIAAAg=</HashCode>
+      <FileName>SalaryCommissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

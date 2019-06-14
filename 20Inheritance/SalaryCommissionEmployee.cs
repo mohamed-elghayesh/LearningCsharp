@@ -14,7 +14,7 @@ namespace Campus
         public string FirstName { get; }
         public string LastName { get; }
         public string SocialSecurityNumber { get; }
-        private decimal grossSales; // gross weekly sales
+        private decimal grossSales; //gross weekly sales
         private decimal commissionRate; //commision percentage
         private decimal salary;
 

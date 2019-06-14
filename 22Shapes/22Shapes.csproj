@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4275359A-7AF1-4EA0-85B1-C0E5E5FA2153}</ProjectGuid>
+    <ProjectGuid>{E33EADED-7753-4E83-8E8B-F6F5204D54F4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20Inheritance</RootNamespace>
-    <AssemblyName>20Inheritance</AssemblyName>
+    <RootNamespace>_22Shapes</RootNamespace>
+    <AssemblyName>22Shapes</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseSalaryCommisionEmployee.cs" />
-    <Compile Include="CommisionEmployee.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalaryCommissionEmployee.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="UniqueList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

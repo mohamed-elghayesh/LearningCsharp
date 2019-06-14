@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4275359A-7AF1-4EA0-85B1-C0E5E5FA2153}</ProjectGuid>
+    <ProjectGuid>{592008E1-CF89-4BEE-9B5A-F5A6AF6EEA6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20Inheritance</RootNamespace>
-    <AssemblyName>20Inheritance</AssemblyName>
+    <RootNamespace>_21InheritancePolymorphism</RootNamespace>
+    <AssemblyName>21InheritancePolymorphism</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseSalaryCommisionEmployee.cs" />
-    <Compile Include="CommisionEmployee.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalaryCommissionEmployee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
