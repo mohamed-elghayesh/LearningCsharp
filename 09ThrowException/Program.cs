@@ -7,44 +7,46 @@ using System.Threading.Tasks;
 
 namespace LearningCsharp
 {
-    class Student
-    {
-        public int StudentID { get; set; }
-        public string StudentName { get; set; }
-    }
-
-    class InvalidStudentNameException : Exception
-    {
-        public InvalidStudentNameException(string name)
-        {
-            Console.WriteLine("Invalid Student Name: {0}", name);
-        }
-    }
-
     class Program
     {
+        // using throw allows stack trace history
+        // throw ex, ends the stack trace
         static void Main(string[] args)
         {
-            Student newStudent = null;
-            
             try
             {
-                newStudent = new Student();
-                newStudent.StudentName = "James007";
-
-                ValidateStudent(newStudent);
+                Method2();
             }
-            catch {}
-            
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace.ToString());
+            }
+
             Console.ReadLine();
         }
 
-        private static void ValidateStudent(Student std)
+        static void Method2()
         {
-            Regex regex = new Regex("^[a-zA-Z]+$");
+            try
+            {
+                Method1();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
-            if (!regex.IsMatch(std.StudentName))
-                throw new InvalidStudentNameException(std.StudentName);
+        static void Method1()
+        {
+            try
+            {
+                throw new Exception("This is Method1 Excetion");
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

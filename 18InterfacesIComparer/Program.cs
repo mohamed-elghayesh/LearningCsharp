@@ -47,15 +47,17 @@ namespace LearningCsharp
         }
     }
 
+    // if I want to set the comparison function
     public class CoffeeRatingComparer : IComparer
     {
-        public int Compare(Object x, Object y)
+        // left obj - right obj = {-ve, 0, +ve}
+        public int Compare(object x, object y)
         {
             Coffee coffee1 = x as Coffee;
             Coffee coffee2 = y as Coffee;
             double rating1 = coffee1.AverageRating;
             double rating2 = coffee2.AverageRating;
-            return rating1.CompareTo(rating2);
+            return (int)(rating1 - rating2); // comparison function
         }
     }
 }
