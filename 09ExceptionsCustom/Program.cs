@@ -24,11 +24,6 @@ namespace _09ExceptionsCustom
         {
             
         }
-
-        public InvalidStudentNameException(string message, Exception innerException) : base(message, innerException)
-        {
-
-        }
     }
 
     class Program
